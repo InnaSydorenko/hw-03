@@ -1,0 +1,403 @@
+:root {
+  --main-title-color: #ffffff;
+  --secondary-title-color: #212121;
+  --accent-color: #2196f3;
+  --main-text: #757575;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*-------------Header----------*/
+
+.header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  color: #000000;
+  margin-right: 128px;
+}
+
+.header-logo-link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-list {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+.header-mail {
+  display: block;
+  text-decoration: none;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  display: block;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-right-item {
+  list-style: none;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--accent-color);
+}
+
+/*---------------------Main--------*/
+
+/*--------Hero--------*/
+
+.hero-container {
+  padding: 195px 200px 431px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: var(--main-title-color);
+  margin-bottom: 18px;
+}
+.hero-section {
+  background-color: #2f303a;
+}
+
+.button {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #188ce8;
+}
+
+/*----------Секция "Преимущества"----------*/
+
+.main-list {
+  display: flex;
+  padding: 94px 215px;
+}
+
+.main-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
+.main-title-third {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+
+/*----------Секция "Чем мы занимаемся"-------*/
+
+.about-container {
+  margin: 94px 215px;
+}
+
+.main-secondary-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.main-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*-----Секция "Наша команда"-------*/
+.team-container {
+  padding: 92px 215px;
+}
+
+.main-secondary-title {
+  margin-bottom: 49px;
+}
+
+.team-content:not(:last-child) {
+  margin-right: 30px;
+}
+
+.third-title {
+  display: flex;
+  margin-top: 29px;
+  margin-bottom: 10px;
+
+  justify-content: center;
+}
+
+.third-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.text {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+  justify-content: center;
+}
+
+.main-section {
+  background-color: #f5f4fa;
+}
+
+/*---------Footer--------*/
+
+.footer {
+  background-color: #2f303a;
+}
+.footer {
+  color: #ffffff;
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-mail {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+/*-------Portfolio main-----------*/
+.button-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  background-color: #f5f4fa;
+}
+.button-nav:hover,
+.button-nav:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
