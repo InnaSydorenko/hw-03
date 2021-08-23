@@ -24,6 +24,12 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -370,6 +376,19 @@ ul {
 }
 
 /*-------Portfolio main-----------*/
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 91px;
+  margin-bottom: 34px;
+}
+
+.btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-nav {
   font-weight: 500;
   font-size: 16px;
@@ -378,11 +397,36 @@ ul {
 
   color: #212121;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
+
 .button-nav:hover,
 .button-nav:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+
+.card-thumb {
+  display: flex;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.portfolio-list > .portfolio-box {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card-content {
+  padding: 20px 24px;
 }
 
 .portfolio-title {
@@ -392,6 +436,8 @@ ul {
   letter-spacing: 0.06em;
 
   color: #212121;
+
+  padding-bottom: 4px;
 }
 .portfolio-text {
   font-weight: 400;
