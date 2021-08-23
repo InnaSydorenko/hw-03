@@ -25,11 +25,6 @@ ul {
   padding-left: 0;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -408,6 +403,10 @@ img {
 
 .card-thumb {
   display: flex;
+}
+
+.card-content {
+  border-bottom: 1px solid hsba(0, 0%, 93%, 1);
 }
 
 .portfolio-list {
