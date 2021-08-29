@@ -25,20 +25,24 @@ ul {
   padding-left: 0;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 /*-------------Header----------*/
+.header {
+border-bottom: 1px solid #ececec;
+}
 
 .header .container {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+display: flex;
 }
 
 .header-logo {
@@ -50,6 +54,8 @@ ul {
   color: var(--accent-color);
   color: #000000;
   margin-right: 128px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo-link {
@@ -133,7 +139,6 @@ ul {
 .header-mail {
   display: block;
   text-decoration: none;
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -154,6 +159,10 @@ ul {
   list-style: none;
 }
 
+  .header-right-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
@@ -162,10 +171,11 @@ ul {
 /*---------------------Main--------*/
 
 /*--------Hero--------*/
+.hero-section {
+ padding: 200px 0;
+ background-color: #2f303a;
+} 
 
-.hero-container {
-  padding: 200px;
-}
 
 .hero-title {
   font-weight: 900;
@@ -178,9 +188,6 @@ ul {
   max-width: 696px;
   height: 100%;
   margin: 0 auto;
-}
-.hero-section {
-  background-color: #2f303a;
 }
 
 .button {
@@ -208,13 +215,18 @@ ul {
 }
 
 /*----------Секция "Преимущества"----------*/
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  }
 
 
 .main-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  justify-content: center;
   max width: 1170px;
 }
 
@@ -246,20 +258,14 @@ ul {
 
 
 .main-secondary-title {
-  display: flex;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 
-  justify-content: center;
-}
-
-.main-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 94px;
+   margin-bottom: 50px;
 }
 
 .about-item:not(:last-child) {
@@ -274,7 +280,6 @@ ul {
 .main-team {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .team-content:not(:last-child) {
@@ -282,11 +287,7 @@ ul {
 }
 
 .third-title {
-  display: flex;
-  margin-top: 30px;
   margin-bottom: 10px;
-
-  justify-content: center;
 }
 
 .third-title {
@@ -299,40 +300,34 @@ ul {
 }
 
 .text {
-  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 
   color: #757575;
-
-  justify-content: center;
 }
-
-.main-section-container {
-  background-color: #f5f4fa;
+.team-box {
+  padding: 30px 0;
 }
 
 /*---------Footer--------*/
-.header-logo {
+.header-logo-logo {
   display: block;
-}
-
-.footer-container {
-  background-color: #2f303a;
-}
-.footer-container {
   color: #ffffff;
+  padding: 0 0 0 0;
+  margin: 0 auto;
 }
 
-.footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 215px;
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
+
+  padding: 60px 0;
 }
 
-.footer-link {
+
+.footer-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -387,9 +382,13 @@ ul {
   margin-top: 20px;
   margin-bottom: 9px;
 }
+ .footer-item:not(:last-child) {
+   margin-bottom: 9px;
+ }
+ 
+
 .footer-mail {
   display: flex;
-  margin-bottom: 9px;
 }
 
 .footer-tel:hover,
