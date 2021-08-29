@@ -231,8 +231,13 @@ display: flex;
 
 .main-item:not(:last-child) {
   margin-right: 30px;
-  width: 270px;
 }
+
+.main-item {
+ width: 270px;
+}
+
+
 
 .main-title-third {
   font-weight: 700;
